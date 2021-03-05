@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Recipes';
+  page: string = 'recipes';
+
+  showPage(page) {
+    // console.log(page);
+    this.page = page;
+  }
 }
