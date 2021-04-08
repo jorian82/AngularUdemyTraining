@@ -1,9 +1,12 @@
-<app-header (onPageSelected)="showPage($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+    <!--
       <app-recipes-book *ngIf="page==='recipes'"></app-recipes-book>
       <app-shopping-list *ngIf="page==='shopping'"></app-shopping-list>
+    -->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
